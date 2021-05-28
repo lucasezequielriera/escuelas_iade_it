@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "system-ui";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 0;
+}
+body #header .navbar {
+  box-shadow: 0px 0px 10px #bbbbbb;
+  padding: 3px;
+}
+body #header .navbar .container-fluid .navbar-brand img {
+  width: 80px;
+}
+body #header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  margin: 0px 5px;
+  align-self: center;
+}
+body #header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:last-child a {
+  padding: 5px 15px;
+  text-decoration: bold;
+}
+body #header .navbar .container-fluid .navbar-collapse form {
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+body #main {
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  height: calc(100% - 56px - 50px);
+  z-index: 0;
+}
+body #main .left-part {
+  width: 50%;
+  padding-top: 10px;
+}
+body #main .left-part .title {
+  color: #2c2c2c;
+}
+body #main .left-part .title span {
+  animation: oscilar 3s alternate infinite;
+  font-size: 200px;
+  font-weight: 400;
+}
+body #main .left-part .subtitle {
+  border-left: 1px solid red;
+  padding-left: 5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+body #main .left-part .modalButton {
+  margin-top: 20px;
+  width: 120px;
+}
+body #main .left-part .modal .modal-dialog .modal-content .modal-title {
+  font-weight: 300;
+}
+body #main .left-part .modal .modal-dialog .modal-content button {
+  font-weight: 300;
+}
+body #main .right-part {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+body #main .right-part .slide-imgs {
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  z-index: -10;
+  display: flex;
+}
+body #main .right-part .slide-imgs img {
+  animation: slide 40s infinite linear;
+}
+body #main .right-part .images-subtitle span {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 13px;
+  margin: 2px;
+}
+body #main .right-part .images-subtitle span img {
+  width: 15px;
+}
+body #footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+body #footer .offcanvas {
+  background-color: white;
+  border: 1px solid white;
+  height: 110px;
+}
+body #footer .offcanvas .offcanvas-header .offcanvas-title {
+  font-weight: 400;
+}
+@keyframes oscilar {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #e40303;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-1000px);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
