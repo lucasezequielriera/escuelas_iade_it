@@ -28,6 +28,8 @@ function hideModal() {
     modalWindow.style.backgroundColor = 'transparent';
     submitButton.classList.remove('btn-danger');
     submitButton.classList.add('btn-outline-danger');
+    // Si hay problemas con el buscador, éste es el problema //
+    formSearch.style.zIndex = 1;
 }
 
 /////----- / Main -----/////

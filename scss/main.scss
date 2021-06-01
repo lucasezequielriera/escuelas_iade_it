@@ -47,71 +47,214 @@ body {
     }
     
     #main {
-        padding: 50px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column nowrap;
         height: calc(100% - 56px - 50px);
         z-index: 0;
-        .left-part {
-            width: 50%;
-            padding-top: 10px;
-            .title {
-                color: rgb(44, 44, 44);
-                span {
-                    animation: oscilar 3s alternate infinite;
-                    font-size: 200px;
-                    font-weight: 400;
+        .top-part {
+            width: 100%;
+            height: calc(50%);
+            display: flex;
+            flex-flow: row nowrap;
+            .left-part {
+                font-weight: 15px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    margin: 0px;
+                    color: rgb(31, 31, 31);
+                    font-weight: 500;
+                    letter-spacing: -4px;
+                    font-size: 80px;
+                    .iade {
+                        animation: oscilarIade 5s infinite alternate;
+                        letter-spacing: -7px;
+                    }
+                    .it {
+                        color: rgb(209, 0, 0);
+                        font-size: 180px;
+                        font-weight: 300;
+                        letter-spacing: -14px;
+                        animation: oscilarIt 5s infinite alternate;
+                    }
+                }
+                p {
+                    margin-top: -40px;
+                    margin-left: -378px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                h5 {
+                    color: rgb(114, 114, 114);
+                    border-left: 2px solid red;
+                    padding-left: 10px;
+                    font-weight: 300;
+                    font-size: 19px;
+                    letter-spacing: -1px;
+                    text-align: start;
+                    width: 80%;
+                    margin: auto;
+                }
+                button {
+                    width: 80%;
                 }
             }
-            .subtitle {
-                border-left: 1px solid red;
-                padding-left: 5px;
-                font-weight: 300;
-                font-size: 16px;
+            .right-part {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                align-self: center;
+                overflow: hidden;
+                img {
+                    animation: slider 20s infinite linear;
+                }
             }
-            .modalButton {
-                margin-top: 20px;
-                width: 120px;
-            }
-            .modal {
-                .modal-dialog {
-                    .modal-content {
-                        .modal-title {
-                            font-weight: 300;
-                        }
-                        button {
-                            font-weight: 300;
-                        }
+        }
+        .middle-part {
+            max-width: 100%;
+            min-height: 80px;
+            max-height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(197, 0, 0);
+            box-shadow: 0px 0px 20px rgb(107, 107, 107);
+            .card {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                .icono {
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    padding-top: 10px;
+                    margin-right: 2px;
+                    img {
+                        width: 30px;
+                    }
+                }
+                .informacion {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    h5 {
+                        color: white;
+                        margin: 0px;
+                        padding: 0px 5px;
+                        line-height: 49px;
+                        font-weight: 300;
+                        font-size: 18px;
+                        align-self: center;
+                        border-left: 1px solid rgb(226, 226, 226);
                     }
                 }
             }
         }
-        .right-part {
-            width: 50%;
+        .bottom-part {
+            width: 100%;
+            height: calc(50%);
             display: flex;
-            flex-flow: column nowrap;
-            height: 100%;
-            .slide-imgs {
-                overflow: hidden;
-                width: 100%;
-                height: 270px;
-                z-index: -10;
+            flex-flow: row nowrap;
+            .right-part {
                 display: flex;
-                img {
-                    animation: slide 40s infinite linear;
-                }
-            }
-            .images-subtitle {
-                span {
-                    font-weight: 400;
-                    line-height: normal;
-                    font-size: 13px;
-                    margin: 2px;
-                    img {
-                        width: 15px;
+                width: 100%;
+                height: 100%;
+                .container-courses {
+                    display: flex;
+                    flex-flow: row wrap;
+                    flex: auto;
+                    justify-content: space-evenly;
+                    align-content: space-evenly;
+                    a {
+                        border-radius: 5px;
+                        .course {
+                            border: 1px solid none;
+                            width: 400px;
+                            height: 100px;
+                            box-shadow: 5px 5px 10px rgb(114, 114, 114);
+                            border-radius: 5px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: relative;
+                            z-index: 1;
+                            border-radius: 5px;
+                            overflow: hidden;
+                            .badge:first-child {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                font-weight: 500;
+                                font-size: 12px;
+                            }
+                            .badge:nth-child(2) {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-weight: 600;
+                                font-size: 12px;
+                            }
+                            p {
+                                color: white;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                margin: 0px 10px 5px 0px;
+                                font-size: 20px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .course::after {
+                            background: rgba(0, 0, 0, 0.658);
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            border-radius: 5px;
+                            transition: all .2s;
+                        }
+                    }
+                    a:nth-child(1) .course {
+                        background-image:url('../images/transformacion-digital.jpeg');
+                    }
+                    a:nth-child(2) .course {
+                        background-image:url('../images/curso-html.png');
+                    }
+                    a:nth-child(3) .course {
+                        background-image:url('../images/facebook-ads.png');
+                    }
+                    a:nth-child(4) .course {
+                        background-image:url('../images/criptomonedas.jpeg');
+                    }
+                    a:nth-child(5) .course {
+                        background-image:url('../images/google-ads.jpeg');
+                    }
+                    a:nth-child(6) .course {
+                        background-image:url('../images/curso-office.png');
+                    }
+
+                    a:hover .course p{
+                        animation: mostrarPalabra .3s;
+                        text-shadow: 0px 0px 5px black;
+                    }
+                    a:hover .course::after {
+                        background-color: rgba(0, 0, 0, 0.253);
                     }
                 }
             }
+        }
+        .part {
+            text-align: center;
         }
     }
 
@@ -133,20 +276,40 @@ body {
     }
 }
 
-@keyframes oscilar {
-    from {
-        color: transparent;
-    }
-    to {
+// Keyframes //
+@keyframes oscilarIade {
+    0% {
         color: rgb(228, 3, 3);
+    }
+    100% {
+        color: transparent;
     }
 }
 
-@keyframes slide {
+@keyframes oscilarIt {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: rgb(228, 3, 3);
+        margin-left: -120px;
+    }
+}
+
+@keyframes mostrarPalabra {
     from {
-        transform: translate(0);
+        transform: translateX(300px);
     }
     to {
-        transform: translate(-1000px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(-700px);
     }
 }
