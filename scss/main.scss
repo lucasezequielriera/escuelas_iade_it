@@ -29,11 +29,86 @@ body {
                         .nav-item {
                             margin: 0px 5px;
                             align-self: center;
+                            .dropdown-menu {
+                                width: 700px;
+                                height: 400px;
+                                padding: 0px;
+                                top: 50px;
+                                .container-dropdown {
+                                    width: 700px;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    .left-part-dropdown {
+                                        width: 200px;
+                                        height: 399px;
+                                        border-right: 1px solid grey;
+                                        overflow-x: hidden;
+                                        .container-scroll {
+                                            overflow-x: scroll;
+                                            width: 100%;
+                                            height: 396px;
+                                            li {
+                                                text-transform: uppercase;
+                                                font-size: 13px;
+                                                .dropdown-item {
+                                                    width: 98%;
+                                                    height: 50px;
+                                                    background-color: whitesmoke;
+                                                    margin: 0 auto;
+                                                    margin-top: 2px;
+                                                    padding: 6px 5px;
+                                                    transition: all .2s;
+                                                    font-weight: 600;
+                                                    span {
+                                                        font-size: 10px;
+                                                        font-weight: 300;
+                                                    }
+                                                }
+                                                .dropdown-item:hover {
+                                                    background-color: rgb(192, 0, 0);
+                                                    color: white;
+                                                    transform: translateX(10px)
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .right-part-dropdown {
+                                        width: calc(700px - 200px);
+                                        height: 400px;
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        justify-content: space-evenly;
+                                        .container-information-top {
+                                            width: 98%;
+                                            height: 79%;
+                                            border: 1px solid rgb(213, 213, 213);
+                                            margin: 0 auto;
+                                            border-radius: 5px;
+                                            padding: 30px;
+                                            
+                                        }
+                                        .container-information-bottom {
+                                            width: 98%;
+                                            height: 18%;
+                                            background-color: rgb(192, 0, 0);
+                                            margin: 0 auto;
+                                            border-radius: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .nav-item:first-child {
+                            a {
+                                padding-left: 0px;
+                            }
                         }
                         .nav-item:last-child {
                             a {
-                                padding: 5px 15px;
+                                padding: 7.5px 15px;
                                 text-decoration: bold;
+                                margin-left: 7.5px;
                             }
                         }
                     }
@@ -143,6 +218,7 @@ body {
                     width: 100%;
                     height: 100%;
                     display: flex;
+                    // flex-flow: column nowrap;
                     h5 {
                         color: white;
                         margin: 0px;
@@ -262,6 +338,15 @@ body {
         width: 100%;
         height: 50px;
         text-align: center;
+        .btn-cart {
+            position: relative;
+            width: 80px;
+            span {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
         .offcanvas {
             background-color: rgb(255, 255, 255);
             border: 1px solid white;
