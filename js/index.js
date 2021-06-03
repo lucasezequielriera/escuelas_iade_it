@@ -40,7 +40,7 @@ function hideModal() {
 const containerScroll = document.querySelector('.container-scroll');
 
 // Array (categories) //
-const categories = ['it', 'oficios', 'electrónica', 'salud', 'estética', 'electricidad', 'mecánica', 'economía']
+const categories = ['it', 'oficios', 'electrónica', 'salud', 'estética', 'electricidad', 'mecánica', 'economía', 'Cursos TEMPO']
 
 // Categories Iteration //
 categories.forEach(function(item, index) {
@@ -62,7 +62,7 @@ categories.forEach(function(item, index) {
     const br = document.createElement("br");
     // span //
     const span = document.createElement("span");
-    span.textContent = `${index} cursos`;
+    span.textContent = `cursos online`;
     // Insertar y vincular todo //
     a.appendChild(img);
     a.appendChild(br);
@@ -85,6 +85,7 @@ const categoria4 = document.querySelector('.categoria4');
 const categoria5 = document.querySelector('.categoria5');
 const categoria6 = document.querySelector('.categoria6');
 const categoria7 = document.querySelector('.categoria7');
+const categoria8 = document.querySelector('.categoria8');
 const topSection = document.querySelector('.container-information-top');
 const bottomSection = document.querySelector('.container-information-bottom');
 
@@ -98,30 +99,168 @@ categoria4.addEventListener("mouseover", mostrar4);
 categoria5.addEventListener("mouseover", mostrar5);
 categoria6.addEventListener("mouseover", mostrar6);
 categoria7.addEventListener("mouseover", mostrar7);
+categoria8.addEventListener("mouseover", mostrar8);
 
 // Functions //
-
 function mostrar0() {
-    topSection.innerHTML = "Hola a todos, producto 0!<br><button class='btn btn-success'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Publicidad y Marketing</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <h6>Desarrollo Web</h6>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar1() {
-    topSection.innerHTML = "Hola a todos, producto 1!<br><button class='btn btn-danger'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Oficios</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar2() {
-    topSection.innerHTML = "Hola a todos, producto 2!<br><button class='btn btn-info'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Electrónica</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar3() {
-    topSection.innerHTML = "Hola a todos, producto 3!<br><button class='btn btn-light'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Salud</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar4() {
-    topSection.innerHTML = "Hola a todos, producto 4!<br><button class='btn btn-dark'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Estética</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar5() {
-    topSection.innerHTML = "Hola a todos, producto 5!<br><button class='btn btn-warning'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Electricidad</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar6() {
-    topSection.innerHTML = "Hola a todos, producto 6!<br><button class='btn btn-secondary'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Mecánica</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }
 function mostrar7() {
-    topSection.innerHTML = "Hola a todos, producto 7!<br><button class='btn btn-primary'>Clickeá y mirá más!</button>"
+    topSection.innerHTML = `
+    <ul>
+        <h6>Economía</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
+}
+function mostrar8() {
+    topSection.innerHTML = `
+    <ul>
+        <h6>Cursos Rápidos y Certificados</h6>
+        <a href="."><li>Transformación Digital</li></a>
+        <a href="."><li>Facebook Ads</li></a>
+        <a href="."><li>Google Ads</li></a>
+        <a href="."><li>Microsoft Office</li></a>
+    </ul>
+    <ul>
+        <a><li> </li></a><br>
+        <a href="."><li>Programación en HTML</li></a>
+        <a href="."><li>Criptomonedas</li></a>
+    </ul>
+    <div class="button-verCursos">
+        <button class='btn btn-dark'>Ver todos los cursos</button>
+    </div> `
 }

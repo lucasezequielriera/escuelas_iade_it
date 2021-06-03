@@ -80,12 +80,54 @@ body {
                                         flex-flow: column nowrap;
                                         justify-content: space-evenly;
                                         .container-information-top {
+                                            display: flex;
+                                            flex-flow: row nowrap;
                                             width: 98%;
                                             height: 79%;
                                             border: 1px solid rgb(213, 213, 213);
                                             margin: 0 auto;
                                             border-radius: 5px;
                                             padding: 30px;
+                                            text-align: center;
+                                            justify-content: space-evenly;
+                                            position: relative;
+                                            ul {
+                                                list-style: none;
+                                                padding: 0px;
+                                                display: flex;
+                                                flex-flow: column nowrap;
+                                                align-items: flex-start;
+                                                h6 {
+                                                    font-weight: 700;
+                                                    text-decoration: underline;
+                                                }
+                                                a {
+                                                    color: black;
+                                                    text-decoration: none;
+                                                    border-radius: 5px;
+                                                    margin: 0px 1px;
+                                                    font-weight: 300;
+                                                    li {
+                                                        border: 1px solid transparent;
+                                                        margin: 0px 0px;
+                                                        padding: 0px;
+                                                        border-radius: 5px;
+                                                        transition: all .2s;                                     
+                                                    }
+                                                    li:hover {
+                                                        background-color: rgba(0,0,0,0.2);
+                                                    }
+                                                }
+                                            }
+                                            .button-verCursos {
+                                                position: absolute;
+                                                bottom: 0;
+                                                left: 0;
+                                                right: 0;
+                                                button {
+                                                    width: 100%;
+                                                }
+                                            }
                                             
                                         }
                                         .container-information-bottom {
@@ -94,6 +136,17 @@ body {
                                             background-color: rgb(192, 0, 0);
                                             margin: 0 auto;
                                             border-radius: 5px;
+                                            overflow: hidden;
+                                            .container-images {
+                                                display: flex;
+                                                flex-flow: row nowrap;
+                                                animation: miniSlider 30s infinite alternate linear;
+                                                img {
+                                                    width: 30px;
+                                                    height: 30px;
+                                                    margin: 20px 10px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -370,7 +423,6 @@ body {
         color: transparent;
     }
 }
-
 @keyframes oscilarIt {
     0% {
         color: transparent;
@@ -380,7 +432,6 @@ body {
         margin-left: -120px;
     }
 }
-
 @keyframes mostrarPalabra {
     from {
         transform: translateX(300px);
@@ -389,12 +440,19 @@ body {
         transform: translateX(0px);
     }
 }
-
 @keyframes slider {
     from {
         transform: translateX(200px);
     }
     to {
         transform: translateX(-700px);
+    }
+}
+@keyframes miniSlider {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(-300px);
     }
 }
