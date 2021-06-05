@@ -31,7 +31,7 @@ body #header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dr
   height: 400px;
   padding: 0px;
   top: 50px;
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 30px #878787;
 }
 body #header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .container-dropdown {
   width: 700px;
