@@ -186,6 +186,7 @@ body #main .top-part .left-part h1 {
   font-weight: 500;
   letter-spacing: -4px;
   font-size: 80px;
+  white-space: nowrap;
 }
 body #main .top-part .left-part h1 .iade {
   animation: oscilarIade 5s infinite alternate;
